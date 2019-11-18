@@ -38,8 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
     <!-- END Custom CSS-->
   </head>
-  <body data-open="click" data-menu="vertical-menu" data-col="2-columns" class="vertical-layout vertical-menu 2-columns ">
-
+  <body data-open="click" data-menu="vertical-menu" data-col="2-columns" class="vertical-layout vertical-menu 2-columns  fixed-navbar">
  <!-- navbar-fixed-top-->
  <nav class="header-navbar navbar navbar-with-menu navbar-fixed-top navbar-light navbar-shadow">
   <div class="navbar-wrapper">
@@ -64,156 +63,145 @@
 <!-- ////////////////////////////////////////////////////////////////////////////-->
 
 
-    <!-- main menu-->
-    <div data-scroll-to-active="true" class="main-menu menu-fixed menu-light menu-accordion menu-shadow">
-      <!-- main menu header-->
-      <div class="main-menu-header">
-        <input type="text" placeholder="Search" class="menu-search form-control round"/>
+<!-- main menu-->
+<div data-scroll-to-active="true" class="main-menu menu-fixed menu-light menu-accordion menu-shadow">
+  <!-- main menu header-->
+  <div class="main-menu-header">
+    <input type="text" placeholder="Search" class="menu-search form-control round"/>
+  </div>
+  <!-- / main menu header-->
+  <!-- main menu content-->
+  <div class="main-menu-content">
+    <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
+      <li class="nav-item"><a href="index.html"><i class="icon-home3"></i><span data-i18n="nav.dash.main" class="menu-title">Inicio</span></a>
+      </li>
+      <li class="nav-item"><a href="accesorios.html"><i class="icon-ios-albums-outline"></i><span data-i18n="nav.cards.main" class="menu-title">Accesorios</span></a>
+      </li>
+      <li class="nav-item"><a href="recomendaciones.html"><i class="icon-stack-2"></i><span data-i18n="nav.page_layouts.main" class="menu-title">Recomendaciones</span></a>
+      </li>
+      <li class="nav-item"><a href="troubleShooting.html"><i class="icon-briefcase4"></i><span data-i18n="nav.project.main" class="menu-title">Trouble Shooting</span></a>           
+      </li>
+      <li class="nav-item"><a href="retroalimentación.html"><i class="icon-whatshot"></i><span data-i18n="nav.advance_cards.main" class="menu-title">Retroalimentación</span></a>
+      </li>
+    </ul>
+  </div>
+<!-- /main menu content-->
+<!-- main menu footer-->
+<!-- include includes/menu-footer-->
+<!-- main menu footer-->
+</div>
+<!-- / main menu-->
+
+
+<div class="app-content content container-fluid">
+  <div class="content-wrapper">
+    <div class="content-header row">
+      <div class="content-header-left col-md-6 col-xs-12 mb-1">
+        <h2 class="content-header-title">Feedback</h2>
       </div>
-      <!-- / main menu header-->
-      <!-- main menu content-->
-      <div class="main-menu-content">
-        <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
-          <li class="nav-item"><a href="index.html"><i class="icon-home3"></i><span data-i18n="nav.dash.main" class="menu-title">Inicio</span></a>
-          </li>
-          <li class="nav-item"><a href="accesorios.html"><i class="icon-ios-albums-outline"></i><span data-i18n="nav.cards.main" class="menu-title">Accesorios</span></a>
-          </li>
-          <li class="nav-item"><a href="recomendaciones.html"><i class="icon-stack-2"></i><span data-i18n="nav.page_layouts.main" class="menu-title">Recomendaciones</span></a>
-          </li>
-          <li class="nav-item"><a href="troubleShooting.html"><i class="icon-briefcase4"></i><span data-i18n="nav.project.main" class="menu-title">Trouble Shooting</span></a>           
-          </li>
-          <li class="nav-item"><a href="retroalimentación.html"><i class="icon-whatshot"></i><span data-i18n="nav.advance_cards.main" class="menu-title">Retroalimentación</span></a>
-          </li>
-        </ul>
-      </div>
-      <!-- /main menu content-->
-      <!-- main menu footer-->
-      <!-- include includes/menu-footer-->
-      <!-- main menu footer-->
-    </div>
-    <!-- / main menu-->
-
-    <div class="app-content content container-fluid">
-      <div class="content-wrapper">
-        <div class="content-header row">
-          <div class="content-header-left col-md-6 col-xs-12 mb-1">
-            <h2 class="content-header-title">Static Layout</h2>
-          </div>
-          <div class="content-header-right breadcrumbs-right breadcrumbs-top col-md-6 col-xs-12">
-            <div class="breadcrumb-wrapper col-xs-12">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a>
-                </li>
-                <li class="breadcrumb-item"><a href="#">Page Layouts</a>
-                </li>
-                <li class="breadcrumb-item active">Static Layout
-                </li>
-              </ol>
-            </div>
-          </div>
-        </div>
-        <div class="content-body"><!-- Description -->
-<section id="description" class="card">
-    <div class="card-header">
-        <h4 class="card-title">Description</h4>
-    </div>
-    <div class="card-body collapse in">
-        <div class="card-block">
-            <div class="card-text">
-                <p>Staic layout is useful for those platform having less menu options and content sections weher user required to scroll less.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/ Description -->
-<!-- CSS Classes -->
-<section id="css-classes" class="card">
-    <div class="card-header">
-        <h4 class="card-title">CSS Classes</h4>
-    </div>
-    <div class="card-body collapse in">
-        <div class="card-block">
-            <div class="card-text">
-                <p>Default this template has a static layout elements, so there is no any specific classes need to add to create this layout.</p>
-                <p>To create this layout just need to confirm <code>.navbar-fixed-top</code>, <code>.menu-fixed</code> and <code>.footer-fixed</code> not applied to their respective element, in short do not use fixed layout classes.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/ CSS Classes -->
-<!-- HTML Markup -->
-<section id="html-markup" class="card">
-    <div class="card-header">
-        <h4 class="card-title">HTML Markup</h4>
-        <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
-        <div class="heading-elements">
-            <ul class="list-inline mb-0">
-                <li><a data-action="collapse"><i class="icon-minus4"></i></a></li>
-                <li><a data-action="reload"><i class="icon-reload"></i></a></li>
-                <li><a data-action="close"><i class="icon-cross2"></i></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="card-body collapse in">
-        <div class="card-block">
-            <div class="card-text">
-                <p>This section contains HTML Markup to create static layout. No need to add any specific classes just do not use fixed layout classes. This layout has a navigation, content and left sidebar sections with common header & footer.</p>
-                <p>Robust has a ready to use starter kit, you can use this layout directly by using the starter kit pages from the <code>robust-admin/starter-kit</code> folder.</p>
-                <pre class="language-markup">
-                <code class="language-markup">
-                    &lt;!DOCTYPE html&gt;
-                      &lt;html lang="en"&gt;
-                        &lt;head&gt;&lt;/head&gt;
-                        &lt;body data-menu="vertical-menu" class="vertical-layout vertical-menu content-left-sidebar menu-expanded"&gt;
-
-                          &lt;!-- navbar-fixed-top--&gt;
-                          &lt;nav role="navigation" class="header-navbar navbar navbar-with-menu navbar-dark navbar-shadow navbar-border"&gt;
-                              ...
-                          &lt;/nav&gt;
-
-                          &lt;!-- BEGIN Navigation--&gt;
-                          &lt;div class="main-menu menu-dark menu-shadow"&gt;
-                              ...
-                          &lt;/div&gt;
-                          &lt;!-- END Navigation--&gt;
-
-                          &lt;!-- BEGIN Content--&gt;
-                          &lt;div class="content app-content container-fluid"&gt;
-                              &lt;div class="content-wrapper"&gt;
-                                  &lt;!-- content header--&gt;
-                                  &lt;div class="content-header row"&gt;
-                                      ...
-                                  &lt;/div&gt;
-                                  &lt;!-- content header--&gt;
-
-                                  &lt;!-- content body--&gt;
-                                  &lt;div class="content-body"&gt;
-                                      ...
-                                  &lt;/div&gt;
-                                  &lt;!-- content body--&gt;
-
-                              &lt;/div&gt;
-                          &lt;/div&gt;
-                          &lt;!-- END Content--&gt;
-
-                          &lt;!-- START FOOTER DARK--&gt;
-                          &lt;footer class="footer footer-dark"&gt;
-                              ...
-                          &lt;/footer&gt;
-                          &lt;!-- START FOOTER DARK--&gt;
-
-                        &lt;/body&gt;
-                      &lt;/html&gt;
-                </code>
-                </pre>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/ HTML Markup -->
+      <div class="content-header-right breadcrumbs-right breadcrumbs-top col-md-6 col-xs-12">
+        <div class="breadcrumb-wrapper col-xs-12">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="retroalimentación.html">Feedback</a>
+            </li>
+          </ol>
         </div>
       </div>
     </div>
+    <div class="content-body"><!-- Description -->
+<section id="basic-form-layouts">
+  <div class="row match-height">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h4 class="card-title" id="basic-layout-tooltip">Issue Tracking</h4>
+					<a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+					<div class="heading-elements">
+						<ul class="list-inline mb-0">
+							<li><a data-action="reload"><i class="icon-reload"></i></a></li>
+							<li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="card-body collapse in">
+					<div class="card-block">
+
+						<div class="card-text">
+							<p>Sabemos que los usuarios encuentran nuevas funciones para los diferentes equipos, por eso quisiéramos </p>
+						</div>
+
+						<form class="form">
+							<div class="form-body">
+
+								<div class="form-group">
+									<label for="issueinput1">Issue Title</label>
+									<input type="text" id="issueinput1" class="form-control" placeholder="issue title" name="issuetitle" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Issue Title">
+								</div>
+
+								<div class="form-group">
+									<label for="issueinput2">Opened By</label>
+									<input type="text" id="issueinput2" class="form-control" placeholder="opened by" name="openedby" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Opened By">
+								</div>
+
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="issueinput3">Date Opened</label>
+											<input type="date" id="issueinput3" class="form-control" name="dateopened" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Date Opened">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="issueinput4">Date Fixed</label>
+											<input type="date" id="issueinput4" class="form-control" name="datefixed" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Date Fixed">
+										</div>
+									</div>
+								</div>
+
+
+								<div class="form-group">
+									<label for="issueinput5">Priority</label>
+									<select id="issueinput5" name="priority" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Priority">
+										<option value="low">Low</option>
+										<option value="medium">Medium</option>
+										<option value="high">High</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="issueinput6">Status</label>
+									<select id="issueinput6" name="status" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Status">
+										<option value="not started">Not Started</option>
+										<option value="started">Started</option>
+										<option value="fixed">Fixed</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="issueinput8">Comments</label>
+									<textarea id="issueinput8" rows="5" class="form-control" name="comments" placeholder="comments" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Comments"></textarea>
+								</div>
+
+							</div>
+
+							<div class="form-actions">
+								<button type="button" class="btn btn-warning mr-1">
+									<i class="icon-cross2"></i> Cancel
+								</button>
+								<button type="submit" class="btn btn-primary">
+									<i class="icon-check2"></i> Save
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+
+
     <!-- ////////////////////////////////////////////////////////////////////////////-->
 
 
