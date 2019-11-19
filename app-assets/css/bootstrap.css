@@ -2801,13 +2801,13 @@ tbody.collapse.in {
 .nav-pills .nav-item.open .nav-link:focus {
   color: #fff;
   cursor: default;
-  background-color: #967ADC; }
+  background-color: #4FC1E9; }
 
 .nav-pills .nav-link.active:hover,
 .nav-pills .nav-item.open .nav-link:hover {
   color: #fff;
   cursor: default;
-  background-color: #967ADC; }
+  background-color: #2494BE; }
 
 .nav-stacked .nav-item {
   display: block;
