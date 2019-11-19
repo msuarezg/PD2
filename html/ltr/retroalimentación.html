@@ -97,14 +97,14 @@
   <div class="content-wrapper">
     <div class="content-header row">
       <div class="content-header-left col-md-6 col-xs-12 mb-1">
-        <h2 class="content-header-title">Feedback</h2>
+        <h2 class="content-header-title">Retroalimentación</h2>
       </div>
       <div class="content-header-right breadcrumbs-right breadcrumbs-top col-md-6 col-xs-12">
         <div class="breadcrumb-wrapper col-xs-12">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a>
             </li>
-            <li class="breadcrumb-item"><a href="retroalimentación.html">Feedback</a>
+            <li class="breadcrumb-item"><a href="retroalimentación.html">Retroalimentación</a>
             </li>
           </ol>
         </div>
@@ -136,61 +136,42 @@
 							<div class="form-body">
 
 								<div class="form-group">
-									<label for="issueinput1">Issue Title</label>
+									<label for="issueinput1">Asunto</label>
 									<input type="text" id="issueinput1" class="form-control" placeholder="issue title" name="issuetitle" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Issue Title">
 								</div>
 
 								<div class="form-group">
-									<label for="issueinput2">Opened By</label>
-									<input type="text" id="issueinput2" class="form-control" placeholder="opened by" name="openedby" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Opened By">
+											<label for="issueinput3">Fecha</label>
+											<input type="date" id="issueinput2" class="form-control" name="date" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Date">
 								</div>
-
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label for="issueinput3">Date Opened</label>
-											<input type="date" id="issueinput3" class="form-control" name="dateopened" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Date Opened">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<label for="issueinput4">Date Fixed</label>
-											<input type="date" id="issueinput4" class="form-control" name="datefixed" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Date Fixed">
-										</div>
-									</div>
-								</div>
-
-
 								<div class="form-group">
-									<label for="issueinput5">Priority</label>
+									<label for="issueinput5">Tipo de registro</label>
 									<select id="issueinput5" name="priority" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Priority">
-										<option value="low">Low</option>
-										<option value="medium">Medium</option>
-										<option value="high">High</option>
+										<option value="low">Nueva Función/Uso</option>
+										<option value="medium">Recomendación</option>
+										<option value="high">Otro</option>
 									</select>
 								</div>
 
 								<div class="form-group">
-									<label for="issueinput6">Status</label>
+									<label for="issueinput6">Equipo</label>
 									<select id="issueinput6" name="status" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Status">
-										<option value="not started">Not Started</option>
-										<option value="started">Started</option>
-										<option value="fixed">Fixed</option>
+										<option value="not started">Torre de Laparoscopía</option>
 									</select>
 								</div>
 
 								<div class="form-group">
-									<label for="issueinput8">Comments</label>
+									<label for="issueinput8">Comentario</label>
 									<textarea id="issueinput8" rows="5" class="form-control" name="comments" placeholder="comments" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Comments"></textarea>
 								</div>
 
 							</div>
 
 							<div class="form-actions">
-								<button type="button" class="btn btn-warning mr-1">
+								<button type="button" class="btn btn-danger">
 									<i class="icon-cross2"></i> Cancel
 								</button>
-								<button type="submit" class="btn btn-primary">
+								<button type="submit" class="btn btn-success">
 									<i class="icon-check2"></i> Save
 								</button>
 							</div>
