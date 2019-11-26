@@ -124,71 +124,126 @@
 		<div class="col-md-6">
 			<div class="card">
 				<div class="card-header">
-					<h4 class="card-title" id="basic-layout-tooltip">Seguimiento de Uso del Equipo</h4>
-					
-					<div class="heading-elements">
-						<ul class="list-inline mb-0">
-							<li><a data-action="reload"><i class="icon-reload"></i></a></li>
-							<li><a data-action="expand"><i class="icon-expand2"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="card-body collapse in">
-					<div class="card-block">
+          
+          <h4 class="card-title" id="basic-layout-tooltip">Seguimiento de Uso del Equipo</h4>
+          
+             <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                <div class="heading-elements">
+                  <ul class="list-inline mb-0">
+                    <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                    <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-body collapse in">
+                <div class="card-block">
+      
+                  <div class="card-text">
+                    <p>Sabemos que los usuarios encuentran nuevas funciones o modos de uso para los diferentes equipos biomédicos o que les gustaría dar recomendaciones para mejorarlos. Por eso, invitamos a los usuarios a que documenten sus experiencias con los equipos para promover la mejora constante de la tecnología biomédica.</p>
+                  </div>
+      
+                  <form class="form">
+                    <div class="form-body">
+                      <h4 class="form-section"><i class="icon-eye6"></i>Información del Usuario</h4>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="userinput1">Nombre</label>
+                            <input type="text" id="userinput1" class="form-control" placeholder="Nombre" name="name">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="userinput2">Apellido</label>
+                            <input type="text" id="userinput2" class="form-control" placeholder="Apellido" name="company">
+                          </div>
+                        </div>
+                      </div>
+                      
 
-						<div class="card-text">
-							<p>Sabemos que los usuarios encuentran nuevas funciones o modos de uso para los diferentes equipos biomédicos o que les gustaría dar recomendaciones para mejorarlos. Por eso, invitamos a los usuarios a que documenten sus experiencias con los equipos para promover la mejora constante de la tecnología biomédica. </p>
-						</div>
+                        <div class="form-group">
+                            <label for="issueinput5">Tipo de usuario que reporta</label>
+                            <select id="issueinput5" name="User-type" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="User-type">
+                              <option value="low"> </option>
+                              <option value="low">Profesional medicina</option>
+                              <option value="medium">Profesional enfermería</option>
+                              <option value="high">Técnico instrumentación</option>
+                              <option value="high">Técnico biomédico</option>
+                            </select>
+                          </div>
+          
+                        <div class="form-group">
+                              <label for="issueinput5">Experiencia de uso</label>
+                              <select id="issueinput5" name="experience" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Experience">
+                                <option value="low"> </option>
+                                <option value="low">Nuevo (0-2 años)</option>
+                                <option value="medium">Intermedio (2-5 años)</option>
+                                <option value="high">Experto (>5 años)</option>
+                              </select>
+                            </div>
+                        </div>
 
-						<form class="form">
-							<div class="form-body">
+                        <div class="form-group">
+                          <label for="issueinput1">Correo Electrónico</label>
+                          <input type="text" id="issueinput1" class="form-control" placeholder="Correo Electrónico" name="issuetitle" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Asunto">
+                        </div>
+                      
+      
+                      <h4 class="form-section"><i class="icon-mail6"></i>Reporte</h4>
+      
+                      <div class="form-group">
+                        <label for="issueinput1">Asunto</label>
+                        <input type="text" id="issueinput1" class="form-control" placeholder="Asunto" name="issuetitle" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Asunto">
+                      </div>
+      
+                      <div class="form-group">
+                            <label for="issueinput2">Fecha</label>
+                            <input type="date" id="issueinput2" class="form-control" name="date" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Date">
+                      </div>
+                      <div class="form-group">
+                        <label for="issueinput5">Tipo de registro</label>
+                        <select id="issueinput5" name="priority" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Priority">
+                          <option value="low"> </option>
+                          <option value="low">Nueva Función/Uso</option>
+                          <option value="medium">Recomendación</option>
+                          <option value="high">Otro</option>
+                        </select>
+                      </div>
+                      
+                                    
+      
+      
+                      <div class="form-group">
+                        <label for="issueinput6">Equipo</label>
+                        <select id="issueinput6" name="status" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Status">
+                          <option value="low"> </option>
+                          <option value="not started">Torre de Laparoscopía</option>
+                        </select>
+                      </div>
+      
+                      <div class="form-group">
+                        <label for="issueinput8">Comentario</label>
+                        <textarea id="issueinput8" rows="5" class="form-control" name="comments" placeholder="Comentario" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Comentario"></textarea>
+                      </div>
+      
+                    </div>
+      
+                    <div class="form-actions">
+                      <button type="button" class="btn btn-danger">
+                        <i class="icon-cross2"></i> Cancel
+                      </button>
+                      <button type="submit" class="btn btn-success">
+                        <i class="icon-check2"></i> Save
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
 
-								<div class="form-group">
-									<label for="issueinput1">Asunto</label>
-									<input type="text" id="issueinput1" class="form-control" placeholder="Asunto" name="issuetitle" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Asunto">
-								</div>
 
-								<div class="form-group">
-											<label for="issueinput3">Fecha</label>
-											<input type="date" id="issueinput2" class="form-control" name="date" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Date">
-								</div>
-								<div class="form-group">
-									<label for="issueinput5">Tipo de registro</label>
-									<select id="issueinput5" name="priority" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Priority">
-										<option value="low">Nueva Función/Uso</option>
-										<option value="medium">Recomendación</option>
-										<option value="high">Otro</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label for="issueinput6">Equipo</label>
-									<select id="issueinput6" name="status" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Status">
-										<option value="not started">Torre de Laparoscopía</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label for="issueinput8">Comentario</label>
-									<textarea id="issueinput8" rows="5" class="form-control" name="comments" placeholder="Comentario" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Comentario"></textarea>
-								</div>
-
-							</div>
-
-							<div class="form-actions">
-								<button type="button" class="btn btn-danger">
-									<i class="icon-cross2"></i> Cancel
-								</button>
-								<button type="submit" class="btn btn-success">
-									<i class="icon-check2"></i> Save
-								</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-</section>
 
 
     <!-- ////////////////////////////////////////////////////////////////////////////-->
